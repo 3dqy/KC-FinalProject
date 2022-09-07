@@ -1,0 +1,421 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.background{
+  margin-bottom: 50px;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;  
+  background-image: url(/images/kuwait/k);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  text-align: center;
+  justify-content: start;
+  animation: change 15s infinite ease-in-out;
+  box-shadow:inset -150px 140px 50px rgba(0, 0, 0, 0.719);
+}
+
+
+@keyframes change{
+  0%
+  {
+    background-image: url(/images/kuwait/شهيد.webp);
+  }
+  20%
+  {
+    background-image: url(/images/kuwait/aven\ 2.jpg);
+  }
+  40%
+  {
+    background-image: url(/images/kuwait/desert.jpg);
+  }
+  60%
+  {
+    background-image: url(/images/kuwait/kw8.jpg);
+  }
+  80%
+  {
+    background-image: url(/images/kuwait/ن.png);
+  }
+}
+
+
+
+:root {
+  --background: #e4e4b7;
+  --check: #000;
+  --ball: #f2eee3;
+  --card:  #4bb8ff;
+  --imp: #4bb8ff;
+  --xcard: #000 ;
+  --ximp: #8f0000;
+}
+
+.dark {
+  --background: #000;
+  --check: beige;
+  --ball: #000;
+  --card: #013355 ;
+  --imp: #8f0000;
+  --xcard:  #4bb8ff;
+  --ximp: #4bb8ff;
+}
+.flex{
+  display: flex;flex-direction: row;
+  align-items: center;justify-content: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dark-mode {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: var(--background);
+  transition: .5s;
+}
+
+.checkbox:checked+.label .ball {
+  transform: translateX(24px);
+}
+
+.checkbox {
+height: 23px;
+margin-top: 10px;
+width: 43px;
+margin-left: 720px;
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  margin-left: 40px;
+  width: 43px;
+  height: 20px;
+  background: var(--check);
+  border-radius: 50px;
+  padding: 5px;
+  position: relative;
+}
+
+.ball {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: var(--ball);
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+
+/* navbar */
+.background nav{
+  margin-top: -90px;
+  margin-left: 240px;
+  display: flex;
+  flex-direction: row;
+}
+nav ul li{
+  list-style: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav ul li a{ 
+  text-decoration: none;font-style: oblique;
+  font-size: 20px;
+  padding: 10px 15px;
+  font-weight:800;
+  color: white;
+}
+nav ul li a:hover{
+  color: #881313;
+  background-color: #17C3B2;
+  border-radius: 20px;
+  text-decoration: underline;
+  transition: all 0.5s;
+}
+.mode{
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: small;
+  margin-top: 26px;
+  margin-left: -45px;
+  margin-right: 40px;
+}
+
+.dropbtn {
+  margin-top: -12px;
+  display: block; 
+  font-family: "Sofia", sans-serif;
+  color: #E3DC97;
+  background-color: transparent;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  width: 180px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #940000;
+  font-weight: 700;
+  width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  transition: .3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #17C3B2;
+  color: #940000;
+  transition: .3s;
+}
+
+.dropdown:hover .dropdown-content {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-left: 15px;
+}
+
+.dropdown:hover .dropbtn {
+  color: #17C3B2;
+  transition: 0.3s;
+}
+
+/* back done */
+
+.filterDiv {
+  float: left;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin-right: 140px;
+  display: none; 
+} 
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: #000;
+}
+
+.btn.active {
+  background-color: #b30808;
+  color: white;
+}
+
+
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;  
+
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  object-fit: cover;
+  flex: 0 0 auto;
+  width: 230px;
+  height: 350px;
+  margin-right: 0px;  
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 2vw;
+  height: 10%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.21;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+
+
+.card {
+  margin-right: 60px;
+  width: 190px;
+  height: 254px;
+  background-image: linear-gradient(400deg, #00ff75 0%, #3700ff 100%);
+  transition: all .3s;
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+  border-radius: 20px;
+}
+
+
+.card2 {
+  width: 190px;
+  height: 254px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  transition: all .2s;
+}
+
+.card2:hover {
+  transform: scale(.96);
+ }
+ 
+ 
+.cardy {
+  margin-right: 60px;
+  width: 190px;
+  height: 254px;
+  background: #000;
+  border-radius: 20px;
+  border: 2px solid #07ff07;
+  box-shadow: 2px 2px 15px #000000 inset;
+  text-align: center;
+  color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Pacifico';
+}
+
+.cardy:hover {
+  color: #07ff07;
+  box-shadow: 2px 2px 15px #07ff07 inset;
+}
+
+
+
+.moon {
+  display: block;
+  color: var(--ximp);
+}
+
+.moon h1{
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+
+
+
+.last{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+  background-color: black;
+  border-top: 1px solid #940000;
+}
+.cp{
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 100px;
+}
+
+

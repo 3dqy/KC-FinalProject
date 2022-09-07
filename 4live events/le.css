@@ -1,0 +1,698 @@
+html{
+  scroll-behavior: smooth;
+}
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.background{
+  margin-bottom: 50px;
+  width: 100%;
+  height: 550px;
+  background-image: url(/images/kuwait/event.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  overflow: hidden;  
+  text-align: center;
+  justify-content: start;
+  box-shadow:inset -150px 140px 50px rgba(0, 0, 0, 0.719);
+}
+
+
+:root {
+  --background: #e4e4b7;
+  --check: #000;
+  --ball: #f2eee3;
+  --card:  #4bb8ff;
+  --imp: #000;
+  --xcard: #013355 ;
+}
+
+.dark {
+  --background: #000;
+  --check: beige;
+  --ball: #000;
+  --card: #013355 ;
+  --imp: #6e0000;
+  --xcard:  #4bb8ff;
+}
+.flex{
+  display: flex;flex-direction: row;
+  align-items: center;justify-content: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dark-mode {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: var(--background);
+  transition: .5s;
+}
+
+.checkbox:checked+.label .ball {
+  transform: translateX(24px);
+}
+
+.checkbox {
+height: 23px;
+margin-top: 10px;
+width: 43px;
+margin-left: 720px;
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  margin-left: 40px;
+  width: 43px;
+  height: 20px;
+  background: var(--check);
+  border-radius: 50px;
+  padding: 5px;
+  position: relative;
+}
+
+.ball {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: var(--ball);
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+
+/* navbar */
+.background nav{
+  margin-top: -90px;
+  margin-left: 270px;
+  display: flex;
+  flex-direction: row;
+}
+nav ul li{
+  list-style: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav ul li a{ 
+  text-decoration: none;font-style: oblique;
+  font-size: 20px;
+  padding: 10px 15px;
+  font-weight:800;
+  color: white;
+}
+nav ul li a:hover{
+  color: #881313;
+  background-color: #17C3B2;
+  border-radius: 20px;
+  text-decoration: underline;
+  transition: all 0.5s;
+}
+.mode{
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: small;
+  margin-top: 26px;
+  margin-left: -45px;
+  margin-right: 40px;
+}
+.dropbtn {
+  margin-top: -12px;
+  display: block; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: transparent;
+  color: #E3DC97;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  width: 160px;
+}
+
+.dropbtn {
+  margin-top: -12px;
+  display: block; 
+  font-family: "Sofia", sans-serif;
+  color: #E3DC97;
+  background-color: transparent;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  width: 180px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #940000;
+  font-weight: 700;
+  width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  transition: .3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #17C3B2;
+  color: #940000;
+  transition: .3s;
+}
+
+.dropdown:hover .dropdown-content {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-left: 15px;
+}
+
+.dropdown:hover .dropbtn {
+  color: #17C3B2;
+  transition: 0.3s;
+}
+
+/* From uiverse.io by @gagan-gv */
+
+
+.scanner h1 {
+  color: transparent;
+  font-size: 1.9rem;
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-bottom: 30px;
+ }
+ 
+ .scanner h1::before {
+  content: "Cool things will always be here";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 4px solid #008f81;
+  overflow: hidden;
+  color: var(--check);
+  animation: load91371 6s linear infinite;
+ }
+ 
+ @keyframes load91371 {
+  0%, 10%, 100% {
+   width: 0;
+  }
+ 
+  10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
+   border-right-color: transparent;
+  }
+ 
+  11%,21%,31%,41%,51%,61%,71%,81%,91% {
+   border-right-color: #17FEFF;
+  }
+ 
+  60%, 80% {
+   width: 100%;
+  }
+ }
+
+
+.card {
+  width: 190px;
+  height: 254px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.5s;
+  margin-left: 40px;
+  margin-bottom: 60px;
+ }
+ 
+ .card:hover {
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+  background-color: var(--card);
+ }
+ 
+ .card .blob {
+  height: 10px;
+  width: 75%;
+  border-radius: 0 0 30px 30px;
+  margin: 0 auto;
+  background-color: var(--card);
+  visibility: visible;
+  transition: all 0.3s;
+ }
+ 
+ .card:hover .blob {
+  height: 0;
+ }
+ 
+ .card .img {
+  background-image: url(/images/events/kc.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+
+ 
+ .card .img2 {
+  background-image: url(/images/events/hamaki.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+
+ 
+ .card .img3 {
+  background-image: url(/images/events/disney.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+
+ 
+ .card .img4 {
+  background-image: url(/images/events/unicode.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+
+ 
+ .card .img5 {
+  background-image: url(/images/events/ةشفؤا.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+
+ 
+ .card .img6 {
+  background-image: url(/images/events/miami.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+
+ 
+ .card .img7 {
+  background-image: url(/images/events/ice.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+
+ 
+ .card .img8 {
+  background-image: url(/images/events/omar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+
+ 
+ .card .img9 {
+  background-image: url(/images/events/kc.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+
+ 
+ .card .img10 {
+  background-image: url(/images/events/Cover_Image_Layali_Sendibad_304.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+
+ 
+ .card .img11 {
+  background-image: url(/images/events/Cover_Image_sulaiman_al_mulla_303.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+
+ 
+ .card .img12 {
+  background-image: url(/images/events/Cover_Image_THE_Hungry_Caterpilla_305_en.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+
+ 
+ .card .img13 {
+  background-image: url(/images/events/hala.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+
+
+ 
+ .card:hover .img {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+ }
+
+ 
+ .card:hover .img2 {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+ }
+
+ 
+ .card:hover .img3 {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+ }
+
+ 
+ .card:hover .img4 {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+ }
+
+ 
+ .card:hover .img5 {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+ }
+
+ 
+ .card:hover .img6 {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+ }
+
+ 
+ .card:hover .img7 {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+ }
+
+ 
+ .card:hover .img8 {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+ }
+
+ 
+ .card:hover .img9 {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+ }
+
+ 
+ .card:hover .img10 {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+ }
+
+ 
+ .card:hover .img11 {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+ }
+
+ 
+ .card:hover .img12 {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+ }
+
+ 
+ .card:hover .img13 {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px 0 0;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  z-index: 99999;
+ }
+
+
+
+ 
+ .card h2 {
+  padding: 15px 10px;
+  font-size: 25px;
+  transition: all 0.1s;
+  z-index: -99;
+  line-height: 17px;
+ }
+ 
+ .card span {
+  font-size: 18px;
+ }
+ 
+ .card:hover h2 {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  transition: all 0.5s;
+ }
+
+ 
+ .card p {
+  z-index: -99;
+  opacity: 0;
+ }
+
+ .card:hover p{
+  opacity: 1;
+  transition: all 0.1s;
+  padding: 15px 5px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.1s;
+  z-index: -99;
+  line-height: 10px;
+ }
+
+ 
+.last{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+  background-color: black;
+  border-top: 1px solid #940000;
+}
+.cp{
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 100px;
+  color: #940000;
+}

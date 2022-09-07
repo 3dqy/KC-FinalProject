@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Events</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="/images/kuwait.png" type="image/x-icon">
+    <link rel="stylesheet" href="sp.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+  
+  <div class="dark-mode">
+    <!-- header part -->
+    
+    <div class="background">
+      <a href="/1main page/main.html"><img style="height: 110px; width: 220px;margin-top: 25px; margin-left: -1050px;" src="/images/logo.png" alt="" /></a>
+      <nav style="width: 100%">
+        <ul class="flex">
+          <li><a href="/2get started/gs.html" >Get Started</a></li>
+          <li><a href="/3sites and places/sp.html" >Sites And Places</a></li>
+          <li><a href="/4live events/le.html" >Kuwait Calendar</a></li>
+          <li><a href="/5our offers/oo.html" >Offers</a></li>
+        </ul>
+          <div class="dropdown">
+            <button class="dropbtn">Page Content <i class="bi bi-arrow-down-circle-fill"></i></button>
+            <div class="dropdown-content">
+          <a href="#sp">Sites & Places</a>
+          <a href="#top">Top Picks 🌟 </a>
+        </div>
+      </div>
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <div class="ball"></div>
+        </label>
+        <h5 class="mode">Dark Mode</h5>
+      </nav> 
+    </div>
+
+    <!-- back done -->
+
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-7d93599e-e386-4e6b-8074-087074c2307e"></div>
+
+
+    <div class="flex" id="sp">
+      <h3 style="font-size:4vw; color: var(--xcard);font-weight: 400;margin-right: 50px; margin-bottom: 50px;font-family: Sofia , sans-serif;">
+        Sites and Places
+      </h3>      
+      <h3 style="font-size:4vw; color: var(--xcard);font-weight: 400; margin-bottom: 50px;">
+        المواقع و المزارات
+      </h3>
+    </div>
+
+    <br><br><br>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">        
+        
+        <div class="swiper-slide">
+          <a style="text-decoration: none;color: var(--xcard);" href="#hot">
+          <img style="height: 250px;width:300px;" src="/images/hot.jpeg" />
+          <h1 style="text-align: center;font-family: Sofia , sans-serif;">Hotels</h1>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a style="text-decoration: none;color: var(--xcard);" href="#cafe">
+          <img style="height: 250px;width:300px;" src="/images/cafe.jpeg" />
+          <h1 style="text-align: center;font-family: Sofia , sans-serif;">Cafe's</h1>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a style="text-decoration: none;color: var(--xcard);"href="#res">
+          <img style="height: 250px;width:300px;" src="/images/restau.jpeg" />
+          <h1 style="text-align: center;font-family: Sofia , sans-serif;">Restaurants</h1>
+          </a>
+        </div>
+
+          
+        <div class="swiper-slide">
+          <a  style="text-decoration: none;color: var(--xcard);" href="#mall">
+          <img style="height: 250px;width:300px;" src="/images/mall.jpeg" />          
+          <h1 style="text-align: center;font-family: Sofia , sans-serif;">Malls</h1>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a style="text-decoration: none;color: var(--xcard);" href="#park">
+          <img style="height: 250px;width:300px;" src="/images/park.jpeg" />
+          <h1 style="text-align: center;font-family: Sofia , sans-serif;">Parks</h1>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a style="text-decoration: none;color: var(--xcard);" href="#ent">
+          <img style="height: 250px;width:300px;" src="/images/enterta.jpeg" />
+          <h1 style="text-align: center;font-family: Sofia , sans-serif;">Entertainment</h1>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+<br><br><br>
+    
+    <center><div class="filter">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button style="background-color: var(--xcard);color:var(--ball)" class="btn" onclick="filterSelection('one')"> Best for Individuals 🙋‍♂️</button>
+      <button style="background-color: var(--xcard);color:var(--ball)" class="btn" onclick="filterSelection('twin')"> Twins 👫</button>      
+      <button style="background-color: var(--xcard);color:var(--ball)" class="btn" onclick="filterSelection('family')"> Family 👨‍👩‍👧👨‍👩‍👦</button>
+    </div></center>
+
+    <center><h1 id="hot" style="color: var(--imp);font-size: 60px;font-weight: 700;margin-top: 40px;  font-family: Sofia , sans-serif;margin-bottom: 40px;">Hotels</h1></center>
+    
+    <section class="product" id="hot"> 
+      <button class="pre-btn"><img src="/images/arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="/images/arrow.png" alt=""></button>
+
+      <div class="product-container">                
+          <div class="filterDiv one family">
+          <div class="product-card">            
+              <div class="product-image">
+                  <img src="/images/hotels/4 season.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 style="color: var(--ximp);" >4 Seasons</h1>
+              </div>
+          </div>
+          </div>
+
+          <div class="filterDiv one twin ">
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="/images/hotels/holiday.png" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >Holiday Inn</h1>
+              </div>
+          </div>
+          </div>
+
+          <div class="filterDiv family">
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="/images/hotels/ibis.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >IBIS</h1>
+              </div>
+          </div>
+          </div>
+
+        
+          <div class="filterDiv one">
+            <div class="product-card">            
+                <div class="product-image">
+                    <img src="/images/hotels/khiran.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Khiran Resorts</h1>
+                </div>
+            </div>
+            </div>
+  
+            <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/hotels/levels.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Levels</h1>
+                </div>
+            </div>
+            </div>
+
+
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/hotels/marina.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Marina Hotel</h1>
+                </div>
+            </div>
+            </div>
+  
+            <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/hotels//mariot.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Mariot</h1>
+                </div>
+            </div>
+            </div>
+  
+          
+            <div class="filterDiv one twin family">
+              <div class="product-card">            
+                  <div class="product-image">
+                      <img src="/images/hotels/milenium.png" class="product-thumb" alt="">
+                  </div>
+                  <div class="moon">
+                    <h1 >Millenium</h1>
+                  </div>
+              </div>
+              </div>
+    
+              <div class="filterDiv one twin family">
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="/images/hotels/moven.jpg" class="product-thumb" alt="">
+                  </div>
+                  <div class="moon">
+                    <h1 >Movenpick</h1>
+                  </div>
+              </div>
+              </div>
+
+              
+              <div class="filterDiv one twin family">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/images/hotels/palms.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="moon">
+                      <h1 >The Palms</h1>
+                    </div>
+                </div>
+                </div>
+
+                
+              <div class="filterDiv one twin family">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/images/hotels/raddison.jpg" class="product-thumb" alt="">
+                    </div>
+                    <div class="moon">
+                      <h1 >Raddison Blue</h1>
+                    </div>
+                </div>
+                </div>
+
+                
+              <div class="filterDiv one twin family">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/images/hotels/regency.png" class="product-thumb" alt="">
+                    </div>
+                    <div class="moon">
+                      <h1 >Regency</h1>
+                    </div>
+                </div>
+                </div>
+
+                
+              <div class="filterDiv one twin family">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/images/hotels/shalehi.png" class="product-thumb" alt="">
+                    </div>
+                    <div class="moon">
+                      <h1 >Shalehi</h1>
+                    </div>
+                </div>
+                </div>
+
+                
+              <div class="filterDiv one twin family">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/images/hotels/sheraton.png" class="product-thumb" alt="">
+                    </div>
+                    <div class="moon">
+                      <h1 >Sheraton</h1>
+                    </div>
+                </div>
+                </div>
+
+                
+              <div class="filterDiv one twin family">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img style="height: 250px;width: 200px;" src="/images/hotels/symphony.jpeg" class="product-thumb" alt="">
+                    </div>
+                    <div class="moon">
+                      <h1  >Symphony</h1>
+                    </div>
+                </div>
+                </div>
+    
+  
+            <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/hotels/oasis.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >The Oasis</h1>
+                </div>
+            </div>
+            </div>
+
+      </div>
+  </section>
+    
+
+  <center><h1 id="cafe" style="color: var(--imp);font-size: 60px;font-weight: 700;  font-family: Sofia , sans-serif;margin-bottom: 40px;">Cafe's</h1></center>
+    
+  <section class="product"> 
+    <button class="pre-btn"><img src="/images/arrow.png" alt=""></button>
+    <button class="nxt-btn"><img src="/images/arrow.png" alt=""></button>
+
+    <div class="product-container">                
+        <div class="filterDiv one twin family">
+        <div class="product-card">            
+            <div class="product-image">
+                <img src="/images/cafe/ayame.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Ayame Cafe</h1>
+            </div>
+        </div>
+        </div>
+
+        <div class="filterDiv one twin family">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/cafe/bazzah.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Bazza Cafe</h1>
+            </div>
+        </div>
+        </div>
+
+        <div class="filterDiv one twin">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/cafe/big dip.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Big Dip</h1>
+            </div>
+        </div>
+        </div>
+
+      
+        <div class="filterDiv one">
+          <div class="product-card">            
+              <div class="product-image">
+                  <img src="/images/cafe/bo ali.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >Bo Ali</h1>
+              </div>
+          </div>
+          </div>
+
+          <div class="filterDiv one twin">
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="/images/cafe/caf.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >CAF</h1>
+              </div>
+          </div>
+          </div>
+
+
+          
+        <div class="filterDiv one twin">
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="/images/cafe/caribou.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >Caribou Cafe</h1>
+              </div>
+          </div>
+          </div>
+
+          <div class="filterDiv family">
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="/images/cafe/dose.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >Dose</h1>
+              </div>
+          </div>
+          </div>
+
+        
+          <div class="filterDiv twin family">
+            <div class="product-card">            
+                <div class="product-image">
+                    <img src="/images/cafe/elsit.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Elsit</h1>
+                </div>
+            </div>
+            </div>
+  
+            <div class="filterDiv one twin">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/cafe/exit.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Exit</h1>
+                </div>
+            </div>
+            </div>
+
+            
+            <div class="filterDiv one twin">
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="/images/cafe/grav.jpg" class="product-thumb" alt="">
+                  </div>
+                  <div class="moon">
+                    <h1 >Gravity Cafe</h1>
+                  </div>
+              </div>
+              </div>
+
+              
+            <div class="filterDiv one twin">
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="/images/cafe/khenia.jpg" class="product-thumb" alt="">
+                  </div>
+                  <div class="moon">
+                    <h1 >Khenia Cafe</h1>
+                  </div>
+              </div>
+              </div>
+
+              
+            <div class="filterDiv one twin family">
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="/images/cafe/manoushe.jpg" class="product-thumb" alt="">
+                  </div>
+                  <div class="moon">
+                    <h1 >Shisha & Manoushe</h1>
+                  </div>
+              </div>
+              </div>
+
+              
+            <div class="filterDiv twin family">
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="/images/cafe/my fair.jpg" class="product-thumb" alt="">
+                  </div>
+                  <div class="moon">
+                    <h1 >My Fair</h1>
+                  </div>
+              </div>
+              </div>
+
+              
+            <div class="filterDiv one twin family">
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="/images/cafe/naring - Copy.jpg" class="product-thumb" alt="">
+                  </div>
+                  <div class="moon">
+                    <h1 >Naring</h1>
+                  </div>
+              </div>
+              </div>
+
+              
+            <div class="filterDiv twin family">
+              <div class="product-card">
+                  <div class="product-image">
+                      <img style="height: 250px;width: 200px;" src="/images/cafe/naz naz.jpg" class="product-thumb" alt="">
+                  </div>
+                  <div class="moon">
+                    <h1 >Naz Naz</h1>
+                  </div>
+              </div>
+              </div>
+
+              
+            <div class="filterDiv twin family">
+              <div class="product-card">
+                  <div class="product-image">
+                      <img style="height: 250px;width: 200px;" src="/images/cafe/zogah - Copy.jpg" class="product-thumb" alt="">
+                  </div>
+                  <div class="moon">
+                    <h1 >Zogah</h1>
+                  </div>
+              </div>
+              </div>
+
+              
+            <div class="filterDiv twin family">
+              <div class="product-card">
+                  <div class="product-image">
+                      <img style="height: 250px;width: 200px;" src="/images/cafe/zwara - Copy.jpg" class="product-thumb" alt="">
+                  </div>
+                  <div class="moon">
+                    <h1 >Zwara</h1>
+                  </div>
+              </div>
+              </div>
+  
+
+          <div class="filterDiv family one">
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="/images/cafe/shemri - Copy.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h4 >Shememry traditional cafe</h4>
+              </div>
+          </div>
+          </div>
+
+    </div>
+</section>
+
+<center><h1 id="res" style="color: var(--imp);font-size: 60px;font-weight: 700;  font-family: Sofia , sans-serif;margin-bottom: 40px;">Restaurants</h1></center>
+    
+<section class="product"> 
+  <button class="pre-btn"><img src="/images/arrow.png" alt=""></button>
+  <button class="nxt-btn"><img src="/images/arrow.png" alt=""></button>
+
+  <div class="product-container">                
+      <div class="filterDiv one twin family">
+      <div class="product-card">            
+          <div class="product-image">
+              <img src="/images/restraunts/24 piraso.jpg" class="product-thumb" alt="">
+          </div>
+          <div class="moon">
+            <h1 >24 Piraso</h1>
+          </div>
+      </div>
+      </div>
+
+      <div class="filterDiv one twin family">
+      <div class="product-card">
+          <div class="product-image">
+              <img src="/images/restraunts/60s.jpg" class="product-thumb" alt="">
+          </div>
+          <div class="moon">
+            <h1 >60's</h1>
+          </div>
+      </div>
+      </div>
+
+      <div class="filterDiv family twin">
+      <div class="product-card">
+          <div class="product-image">
+              <img src="/images/restraunts/babak.jpg" class="product-thumb" alt="">
+          </div>
+          <div class="moon">
+            <h1 >Babak</h1>
+          </div>
+      </div>
+      </div>
+
+    
+      <div class="filterDiv one">
+        <div class="product-card">            
+            <div class="product-image">
+                <img src="/images/restraunts/araby.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Araby</h1>
+            </div>
+        </div>
+        </div>
+
+        <div class="filterDiv one">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/restraunts/bos3ood.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Bo S3ood</h1>
+            </div>
+        </div>
+        </div>
+
+
+        
+      <div class="filterDiv one twin family">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/restraunts/70.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >70's</h1>
+            </div>
+        </div>
+        </div>
+
+        <div class="filterDiv family twins">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/restraunts/babel.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Babel</h1>
+            </div>
+        </div>
+        </div>
+
+      
+        <div class="filterDiv one family">
+          <div class="product-card">            
+              <div class="product-image">
+                  <img src="/images/restraunts/bokhary.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >Bokhary</h1>
+              </div>
+          </div>
+          </div>
+
+          <div class="filterDiv one family">
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="/images/restraunts/brAahim.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >Sultan Ibrahim</h1>
+              </div>
+          </div>
+          </div>
+
+          
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/restraunts/chilis.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Chilis</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one ">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/restraunts/classic.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Classic burger</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/restraunts/dikson.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Beit Dickson</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/restraunts/dostana.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Dostana</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one ">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/restraunts/farooj.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Farooj Republic</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/fayrouz.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Fayrouz</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/swaikhat.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Swaikhat</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/shemam.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Al-Shemam</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/shakir.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Shakir</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/qasabgy.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Qasabgy</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/monasabat.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Monasabat</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/meer.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Elmeer</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/mais alghanim.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Mais Alghanim</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/kurdo.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Kurdo</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/king.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >BK</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/kababgi.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Kababgi</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/freej.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Freej Sweileh</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/fridays.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Fridays</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/hamada.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Hamada </h1>
+                </div>
+            </div>
+            </div>
+            
+          <div class="filterDiv twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/restraunts/mamlaka.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Al-Mamlaka</h1>
+                </div>
+            </div>
+            </div>
+
+
+        <div class="filterDiv family one">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/restraunts/wadi.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Wady Rum</h1>
+            </div>
+        </div>
+        </div>
+
+  </div>
+</section>
+
+    
+<center><h1 id="mall" style="color: var(--imp);font-size: 60px;font-weight: 700;  font-family: Sofia , sans-serif;margin-bottom: 40px;">Malls</h1></center>
+    
+<section class="product"> 
+  <button class="pre-btn"><img src="/images/arrow.png" alt=""></button>
+  <button class="nxt-btn"><img src="/images/arrow.png" alt=""></button>
+
+  <div class="product-container">                
+      <div class="filterDiv one twin family">
+      <div class="product-card">            
+          <div class="product-image">
+              <img src="/images/malls/360.jpg" class="product-thumb" alt="">
+          </div>
+          <div class="moon">
+            <h1 >360 mall</h1>
+          </div>
+      </div>
+      </div>
+
+      <div class="filterDiv one twin family">
+      <div class="product-card">
+          <div class="product-image">
+              <img src="/images/malls/89.jpg" class="product-thumb" alt="">
+          </div>
+          <div class="moon">
+            <h1 >89 mall</h1>
+          </div>
+      </div>
+      </div>
+
+
+      <div class="filterDiv one twin family">
+        <div class="product-card">            
+            <div class="product-image">
+                <img src="/images/malls/ajyal.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Ajyal</h1>
+            </div>
+        </div>
+        </div>
+
+        <div class="filterDiv one twin family">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/malls/ashra.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Ashra Mall</h1>
+            </div>
+        </div>
+        </div>
+
+
+        
+      <div class="filterDiv one twin family">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/malls/assima.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Assima mall</h1>
+            </div>
+        </div>
+        </div>
+
+        <div class="filterDiv one twin family">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/malls/aven.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >The Avenues</h1>
+            </div>
+        </div>
+        </div>
+
+      
+        <div class="filterDiv one twin family">
+          <div class="product-card">            
+              <div class="product-image">
+                  <img src="/images/malls/bole.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >Boulevard</h1>
+              </div>
+          </div>
+          </div>
+
+          <div class="filterDiv one">
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="/images/malls/gate.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >Gate Mall</h1>
+              </div>
+          </div>
+          </div>
+
+          
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/malls/hamra.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Al-Hamra Mall</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/malls/kout.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Kout Mall</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/malls/prom.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >The Promenade</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/malls/sama.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Sama Mall</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/malls/slayil.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Slayil</h1>
+                </div>
+            </div>
+            </div>
+
+            
+  </div>
+</section>
+
+
+
+<center><h1 id="park" style="color: var(--imp);font-size: 60px;font-weight: 700;  font-family: Sofia , sans-serif;margin-bottom: 40px;">Places</h1></center>
+    
+<section class="product" > 
+  <button class="pre-btn"><img src="/images/arrow.png" alt=""></button>
+  <button class="nxt-btn"><img src="/images/arrow.png" alt=""></button>
+
+  <div class="product-container">                
+      <div class="filterDiv one">
+      <div class="product-card">            
+          <div class="product-image">
+              <img src="/images/places/shahhed.jpg" class="product-thumb" alt="">
+          </div>
+          <div class="moon">
+            <h1 >Al-Shaheed Park</h1>
+          </div>
+      </div>
+      </div>
+
+        
+      <div class="filterDiv one family">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/places/g mosque.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Grand Mosque</h1>
+            </div>
+        </div>
+        </div>
+
+        <div class="filterDiv family one">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/places/green.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Green Island</h1>
+            </div>
+        </div>
+        </div>
+
+      
+        <div class="filterDiv one twin family">
+          <div class="product-card">            
+              <div class="product-image">
+                  <img src="/images/places/mubarakiya.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >Mubarakiya Souq</h1>
+              </div>
+          </div>
+          </div>
+
+          <div class="filterDiv one">
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="/images/places/bobyan.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >Bobyan Island</h1>
+              </div>
+          </div>
+          </div>
+
+          
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/places/k towers.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Kuwait Towers</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/places/بيت المرايا.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Mirror House</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/places/abdullah.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Abdullah alsalem Center</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/places/failaka.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Failaka Island</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/places/jaber.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Sheikh Jaber Center</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/places/Kuwait-National-Museum-Crafts.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Kuwait National Museum</h1>
+                </div>
+            </div>
+            </div>
+
+
+        <div class="filterDiv family twin">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/places/murouj.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Murouj</h1>
+            </div>
+        </div>
+        </div>
+
+        
+        <div class="filterDiv one twin family">
+          <div class="product-card">
+              <div class="product-image">
+                  <img style="height: 250px;width: 200px;" src="/images/places/lake.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >The Lake</h1>
+              </div>
+          </div>
+          </div>
+
+          
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/places/scientific.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Scientific Center</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/places/بيت السدو.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Sadw House</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/places/البحيرة.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Albohayra</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/places/village.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >The Village</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/places/salam.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Qasr alsalam Museum</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/places/sahara.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Sahara</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/places/shaheed.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Al-Shaheed park Museum</h1>
+                </div>
+            </div>
+            </div>
+
+  </div>
+</section>
+
+
+<center><h1 id="ent" style="color: var(--imp);font-size: 60px;font-weight: 700;  font-family: Sofia , sans-serif;margin-bottom: 40px;">Entertainment</h1></center>
+<section class="product"> 
+  <button class="pre-btn"><img src="/images/arrow.png" alt=""></button>
+  <button class="nxt-btn"><img src="/images/arrow.png" alt=""></button>
+
+  <div class="product-container">                
+      <div class="filterDiv one twin family">
+      <div class="product-card">            
+          <div class="product-image">
+              <img src="/images/entertainment/Bowling.jpg" class="product-thumb" alt="">
+          </div>
+          <div class="moon">
+            <h1 >Bowling Center</h1>
+          </div>
+      </div>
+      </div>
+
+      <div class="filterDiv twin family">
+      <div class="product-card">
+          <div class="product-image">
+              <img src="/images/entertainment/escape.jpg" class="product-thumb" alt="">
+          </div>
+          <div class="moon">
+            <h1 >Escape Land</h1>
+          </div>
+      </div>
+      </div>
+
+      <div class="filterDiv family one twin">
+      <div class="product-card">
+          <div class="product-image">
+              <img src="/images/entertainment/Cinescape.jpg" class="product-thumb" alt="">
+          </div>
+          <div class="moon">
+            <h1 >Cinescape</h1>
+          </div>
+      </div>
+      </div>
+
+    
+      <div class="filterDiv family">
+        <div class="product-card">            
+            <div class="product-image">
+                <img src="/images/entertainment/funity.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Funity</h1>
+            </div>
+        </div>
+        </div>
+
+        <div class="filterDiv one twin family">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/entertainment/g cinem.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Grand Cinemas</h1>
+            </div>
+        </div>
+        </div>
+
+
+        
+      <div class="filterDiv family">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/entertainment/kidzania.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Kidzania</h1>
+            </div>
+        </div>
+        </div>
+
+        <div class="filterDiv family one">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/entertainment/below 0.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Below 0</h1>
+            </div>
+        </div>
+        </div>
+
+      
+        <div class="filterDiv one twin ">
+          <div class="product-card">            
+              <div class="product-image">
+                  <img src="/images/entertainment/cozmo.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >Cozmo</h1>
+              </div>
+          </div>
+          </div>
+
+          <div class="filterDiv one twin family">
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="/images/entertainment/1954.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="moon">
+                <h1 >1954</h1>
+              </div>
+          </div>
+          </div>
+
+          
+          <div class="filterDiv Family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/entertainment/funzone.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Funzone</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/entertainment/Hawally Park.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Hawally Park</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/entertainment/kwt magic.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Kuwait Magic</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/entertainment/mubaratna.png" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Mubaratna</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/images/entertainment/paintball.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Paintball</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/entertainment/slaiel.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Slaiel Jahra</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one twin">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/entertainment/trapped.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Trapped in</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/entertainment/Trampo.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Trampo</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/entertainment/tekzone.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Tekzone</h1>
+                </div>
+            </div>
+            </div>
+
+            
+          <div class="filterDiv one family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/entertainment/Shaab.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Shaab swimming complex</h1>
+                </div>
+            </div>
+            </div>
+
+            
+            
+          <div class="filterDiv one twin family">
+            <div class="product-card">
+                <div class="product-image">
+                    <img style="height: 250px;width: 200px;" src="/images/entertainment/s beach.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="moon">
+                  <h1 >Shwaikh Beach</h1>
+                </div>
+            </div>
+            </div>
+
+
+        <div class="filterDiv family">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/images/entertainment/Ultimate.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="moon">
+              <h1 >Ultimate Explorer</h1>
+            </div>
+        </div>
+        </div>
+
+  </div>
+</section>
+    <br><br><br><br>
+
+    <div class="flex" id="top">
+      <h3 style="font-size:4vw; color: var(--xcard);font-weight: 400;margin-right: 50px; margin-bottom: 50px;font-family: Sofia , sans-serif;">
+        Our Choice this Week   🌟
+      </h3>      
+      <h3 style="font-size:4vw; color: var(--xcard);font-weight: 400; margin-bottom: 50px;">
+        اختيارنا لهذا الأسبوع 
+      </h3>
+    </div>
+
+    <div class="flex">
+
+      <div class="card">
+        <div class="card2">
+          <a href="https://www.regency.com.kw/ar/Regency" target="_blank">  
+          <img style="height: 250px;width: 185px;border-radius: 20px;" src="/images/hotels/regency.png" alt="">
+        </a></div>
+      </div>
+
+      
+      <div class="cardy">
+        <a href="http://www.cafebazza.com/" target="_blank" >
+        <img style="height: 245px;width: 180px;border-radius: 20px;" src="/images/cafe/bazzah.jpg" alt="">
+      </a></div>
+
+      <div class="card">
+        <div class="card2">
+          <a href="https://freej-swaeleh.com/" target="_blank">
+          <img style="height: 250px;width: 185px;border-radius: 20px;" src="/images/restraunts/freej.jpg" alt="">
+        </a> </div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <div style="margin-bottom: 100px;" class="flex">
+    
+      <div class="cardy">
+        <a href="https://www.the-avenues.com/t8DsOxQ1_sfcS92yxdtrRNO0cScyhOUIIbJvKJKJJ-w=" target="_blank">
+        <img style="height: 245px;width: 180px;border-radius: 20px;" src="/images/malls/aven.jpg" alt="">
+        </a></div>
+
+      <div class="cardy">
+        <a href="https://www.ascckw.com/"  target="_blank">
+        <img style="height: 245px;width: 180px;border-radius: 20px;" src="/images/places/abdullah.jpg" alt="">
+      </a></div>
+    </div>
+
+
+
+    
+    <div class="last">
+      <div style="display:flex ;flex-direction: row;align-items:center">
+      <img style="height: 60px; width: 130px" src="/images/logo.png" alt="i kmnow q8 logo">
+      <h5 style="color: #e4e4b7;font-size: 18px;font-weight: 700; font-family: 'Times New Roman', Times, serif;" >"Explore Kuwait as you've never done" <br>
+      "اكتشف الكويت كما لم تفعل من قبل"</h5>
+      <div style="margin-top: 20px;margin-left:100px; margin-right: 50px;" id="google_translate_element"></div>      
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+      <a href='https://taucheruhrdirekt.com/'>t</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=6135bf89663aa43dcaaaaf1baaa0471078927e97'></script>
+      <script type="text/javascript" src="https://freevisitorcounters.com/en/home/counter/964316/t/0"></script>    
+      </div>
+      <p style="color: #6e0000;" class="cp">Copyright © 2022 "I Know Q8". All rights reserved.</p> 
+    </div>
+    
+
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./sp.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
